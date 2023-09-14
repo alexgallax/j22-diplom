@@ -1,13 +1,15 @@
-package praktikum;
+package edu.praktikum;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 
-import static driver.WebDriverCreator.createWebDriver;
+import static edu.praktikum.driver.WebDriverCreator.createWebDriver;
 
 public class OpenPageTest {
+
+    private static final String BASE_URL = "https://stellarburgers.nomoreparties.site/";
 
     private WebDriver driver;
 
@@ -18,7 +20,7 @@ public class OpenPageTest {
 
     @Test
     public void test() {
-        driver.get("https://stellarburgers.nomoreparties.site/");
+        driver.get(BASE_URL);
     }
 
     @After
